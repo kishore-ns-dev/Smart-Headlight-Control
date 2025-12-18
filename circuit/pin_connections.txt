@@ -1,0 +1,27 @@
+SMART HEADLIGHT INTENSITY CONTROL - WIRING GUIDE
+
+1. LDR SENSOR (Light Detection)
+-------------------------------
+   - VCC  -> ESP32 3.3V
+   - GND  -> ESP32 GND (via 10k Ohm Resistor for Voltage Divider)
+   - DO   -> Not Used
+   - AO   -> ESP32 GPIO 34 (Analog ADC Pin)
+
+2. MOSFET MODULE (Headlight Control)
+------------------------------------
+   - VCC  -> External Power Source (+) (e.g., 12V Battery)
+   - GND  -> External Power Source (-) AND ESP32 GND (Common Ground)
+   - SIG  -> ESP32 GPIO 18 (PWM/Digital Pin)
+   - OUT+ -> LED Headlight (+)
+   - OUT- -> LED Headlight (-)
+
+3. LIDAR SENSOR (Optional/Future Scope - VL53L0X)
+-------------------------------------------------
+   - VCC  -> ESP32 3.3V
+   - GND  -> ESP32 GND
+   - SDA  -> ESP32 GPIO 21
+   - SCL  -> ESP32 GPIO 22
+
+POWER NOTES:
+- Do NOT power the High-Power LED directly from the ESP32 pins.
+- Ensure the External Power Source and ESP32 share a Common Ground (GND).
