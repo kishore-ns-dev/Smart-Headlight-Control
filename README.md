@@ -16,8 +16,8 @@ When the surroundings are dark, the headlights operate at full brightness. When 
 - Expandable to LiDAR-based adaptive beam control  
 
 ## 👥 Team Members
-- **Aashish**
 - **Kishore N S**
+- **Aashish**
 - **Aravind**
 - **Praveen**
 - **Adarsh**
